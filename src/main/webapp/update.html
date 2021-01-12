@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- index.php !-->
+<html>
+
+<head>
+    <title>UI Monk - Angular JS Tutotials</title>
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <!-- angular cdn -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- my stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- my script -->
+    <script src='angularjs/app.js'></script>
+</head>
+<body>
+    <div class="containers">
+        <div ng-app='AngularProject' ng-controller='UpdateContactController'>
+            <h3>Friends Contact List</h3>
+            <div class='withForm'>
+                <form  ng-submit='updateContact()'>
+                    <label>Id</label>
+                    <input type="text" ng-model='id' class='form-control'>
+                    <label>Name</label>
+                    <input type="text" ng-model='name' class='form-control'>
+                    <label>Phone</label>
+                    <input type="text" ng-model='phone' class='form-control'>
+                    <input type="submit"  class='form-control'>
+                </form>
+            </div>
+        <!-- container ends -->
+    </div>
+</body>
+</html>
